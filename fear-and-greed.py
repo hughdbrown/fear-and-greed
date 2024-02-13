@@ -16,7 +16,14 @@ def process(data, key):
     #    'market_momentum_sp125',
     #    'stock_price_strength',
     #    'stock_price_breadth',
-    print(data.keys())
+    #    "put_call_options"
+    #    "market_volatility_vix
+    #    "market_volatility_vix_50"
+    #    "junk_bond_demand"
+    #    "safe_haven_demand"
+
+    # print(data.keys())
+    key = 'market_volatility_vix_50'
     h = data[key]
     for x in h['data']:
        t = datetime.datetime.fromtimestamp(x["x"] / 1000)
